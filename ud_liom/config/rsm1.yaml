@@ -1,0 +1,25 @@
+common:
+    lid_topic: "/rslidar_points"
+    imu_topic: "/imu_data"
+preprocess:
+    lidar_type: 1 # RSM1=1, Livox=2, Velodyne=3, Ouster=4, RS-mech=5
+    scan_line: 5 # Number of LiDAR scan lines
+    scan_rate: 10
+    point_filter_num: 2
+    edge_diffrange: 1.0
+    surf_diffrange: 10.0
+    blind: 0.3
+    max_iteration: 8
+    downsampleRate: 1 # default: 1. Downsample your data if too many points. i.e., 16 = 64 / 4, 16 = 16 / 1
+    imu_enable: true
+mapping:
+    filter_size_surf:  0.2 # Submap downsampling
+    filter_size_map: 0.2
+    filter_radius_search: 1.0
+    filter_min_neighbors: 2
+    cube_side_length: 300.0
+    move_scale: 0.2
+    ext_R_Lidar2Car: [ 0.0, 0.0, 0.0 ] # External parameters between LiDAR and IMU
+    ext_t_Lidar2Car: [ 0.0, 0.0, 0.0 ]
+    ext_R_IMU2Car: [ 0.0, 0.0, 0.0 ]
+    ext_t_IMU2Car: [ 0.0, 0.0, 0.0 ]

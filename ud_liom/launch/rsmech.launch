@@ -1,0 +1,14 @@
+<launch>
+  <!-- Launch file for RSMECH LiDAR -->
+
+    <arg name="rviz" default="true" />
+    <!-- topic convert -->
+    <rosparam command="load" file="$(find lig)/config/rsmech.yaml" />
+    <node pkg="topic_preprocessing" type="topic_preprocessing" name="topic_preprocessing" output="screen" />
+    <node pkg="ud_liom" type="ud_liom" name="ud_liom" output="screen" />
+
+    <group if="$(arg rviz)">
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rsmech_rviz" args="-d $(find ud_liom)/rviz_cfg/rviz.rviz" />
+    </group>
+
+</launch>

@@ -39,7 +39,7 @@ In UD-LIOM, raw point clouds and IMU data first undergo preprocessing, including
 
 ### Datasets:
 We provide datasets recorded by RSM1, Livox, and Velodyne LiDAR in challenging environments.
-You can download from [here]([https://huggingface.co/datasets/BS-Zhang/UD-LIOM](https://tongjieducn-my.sharepoint.com/:f:/g/personal/2510258_tongji_edu_cn/ElSZdmkd6FlNhyM86lx4qicBwEgqKaszugvDy__oy4f6uA?e=GDQyXr)).
+You can download from [here](https://tongjieducn-my.sharepoint.com/:f:/g/personal/2510258_tongji_edu_cn/ElSZdmkd6FlNhyM86lx4qicBwEgqKaszugvDy__oy4f6uA?e=GDQyXr).
 
 ## 2. Compilation
 Clone the repository and catkin_make:

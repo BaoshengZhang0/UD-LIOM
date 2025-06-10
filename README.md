@@ -46,7 +46,7 @@ Clone the repository and catkin_make:
 
 ```
     cd ~/UD-LIOM/src
-    git clone https://github.com/xxx.git
+    git clone https://github.com/BaoshengZhang0/UD-LIOM.git
     cd ..
     catkin_make
     source devel/setup.bash
